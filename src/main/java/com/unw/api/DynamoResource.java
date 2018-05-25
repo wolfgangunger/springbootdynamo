@@ -39,9 +39,14 @@ public class DynamoResource {
     @GET
     @Path("/index")
     public String test() {
-        return "Index Page  20.05.2018";
+        return "Springboot Dynamo Index Page  20.05.2018";
     }
-    
+
+    @GET
+    @Path("/info")
+    public String info() {
+        return "Springboot Dynamo Test Application 1.0-SNAPSHOT";
+    }
 
     @GET
     @Path("/test")

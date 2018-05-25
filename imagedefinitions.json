@@ -1,6 +1,6 @@
 [
     {
-        "name": "spring-boot-docker",
-        "imageUri": "016973021151.dkr.ecr.eu-west-3.amazonaws.com/ecs-repository:ungerw-springboot-docker_latest"
+        "name": "springbootdynamo",
+        "imageUri": "016973021151.dkr.ecr.eu-west-3.amazonaws.com/ecs-repository:springbootdynamo"
     }
 ]
