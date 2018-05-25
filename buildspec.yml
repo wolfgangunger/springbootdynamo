@@ -20,7 +20,7 @@ phases:
       - apt-get update -y
       - apt-get install -y openjdk-8-jdk
       - apt-get install -y maven
-      - apt-get install -y gradle
+      #- apt-get install -y gradle
 
   pre_build:
     commands:
@@ -45,8 +45,6 @@ phases:
        - echo Build completed on `date`
        - echo Pushing the Docker images...
        - docker push $TAG_NAME
-       - aws ecs list-services --cluster UngerwECS
-       - aws ecs update-service --cluster UngerwECS --service SpringBootService-Service-XBO2INJQRTEO --task-definition UngerwSpringBootTD
        
 artifacts:
      files:  target/spring-boot.jar

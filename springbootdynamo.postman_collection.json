@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "0632b110-7d21-4516-9eb6-9bc7222fb950",
+		"name": "springbootdynamo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/index",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savePerson",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"id\": \"002\",\n        \"firstName\": \"Sepp\",\n        \"lastName\": \"Maier\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personsAsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/persons2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"persons2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/persons/001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"persons",
+						"001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personByLastName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/personsByLastName/Unger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"personsByLastName",
+						"Unger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/personsByLastName/Unger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"personsByLastName",
+						"Unger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "companiesAsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/companies2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"companies2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"id\": \"002\",\n        \"name\": \"Google\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/dynamo/v1/companies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dynamo",
+						"v1",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
