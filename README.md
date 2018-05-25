@@ -1,5 +1,7 @@
 localhost:8080/dynamo/v1/index
 localhost:8080/dynamo/v1/test
+localhost:8080/dynamo/v1/persons
+...
 
 https://springbootdynamo.aws.de.altemista.cloud/dynamo/v1/index
 
