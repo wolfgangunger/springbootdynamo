@@ -47,4 +47,6 @@ phases:
        - docker push $TAG_NAME
        
 artifacts:
-     files:  target/spring-boot.jar
+     files:
+       - imagedefinitions.json    
+       - target/spring-boot.jar
