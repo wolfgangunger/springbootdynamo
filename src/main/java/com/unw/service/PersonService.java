@@ -29,7 +29,7 @@ public class PersonService {
 	
 	@PostConstruct
 	public void init() {
-		dynamoService.checkTable(Person.class);
+		//dynamoService.checkTable(Person.class);
 	}
 	
 	public void checkDynamo() {

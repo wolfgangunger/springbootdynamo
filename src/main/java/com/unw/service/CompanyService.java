@@ -32,7 +32,7 @@ private final CompanyRepo companyRepo;
 	
 	@PostConstruct
 	public void init() {
-		dynamoService.checkTable(Company.class);
+		//dynamoService.checkTable(Company.class);
 	}
 
 	public long count() {
