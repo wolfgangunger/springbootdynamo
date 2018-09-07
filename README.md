@@ -12,7 +12,12 @@ switch to local dynamo folder
 C:\prg\dynamodb_local
 and run dynamo
 java -jar DynamoDBLocal.jar
-
+Open the DynamoDB-WebInterface:
+   http://127.0.0.1:8000/shell/
+   
+Configure the DynamoDB-Webinterface as shown here:
+![DynamoDBConfiguration](./doc/img/dynamodb_local_setup.png "configuring local dynamodb")
+put into the configuration->"Access Key id:" the value: "localaccess"
   
 016973021151.dkr.ecr.eu-west-3.amazonaws.com/ecs-repository:springbootdynamo
 
